@@ -6,4 +6,3 @@ Allows you to instalock VALORANT
 2. Click Start
 
 
-by Ash
