@@ -6,7 +6,6 @@ from PIL import ImageGrab, Image
 from pynput.mouse import Button, Controller
 import tkinter as tk
 from tkinter import ttk
-import tkinter.font as tkfont
 import threading
 import time
 
@@ -89,6 +88,8 @@ def movecur():
             coords = pyautogui.locateCenterOnScreen('pics/chamber.png',confidence=.7)
         case "Cypher":
             coords = pyautogui.locateCenterOnScreen('pics/cypher.png',confidence=.7)
+        case "Deadlock":
+            coords = pyautogui.locateCenterOnScreen('pics/deadlock.png',confidence=.7)
         case "Fade":
             coords = pyautogui.locateCenterOnScreen('pics/fade.png',confidence=.7)
         case "Gekko":
@@ -135,7 +136,7 @@ def on_selection_change(event):
     print(curAgent)
 
 
-agentlist = ["Jett","Astra","Breach","Brimstone","Chamber","Cypher","Fade","Gekko","Harbour","KAY/O","Killjoy","Neon","Omen","Phoenix","Raze","Reyna","Sage","Skye","Sova","Viper","Yoru"]
+agentlist = ["Jett","Astra","Breach","Brimstone","Chamber","Cypher","Deadlock","Fade","Gekko","Harbour","KAY/O","Killjoy","Neon","Omen","Phoenix","Raze","Reyna","Sage","Skye","Sova","Viper","Yoru"]
 agentlistbox = ttk.OptionMenu(root,currentAgent,"Select an agent",*agentlist,command=on_selection_change)
 agentlistbox.pack(pady=5)
 agentlistbox.config(width=15)
