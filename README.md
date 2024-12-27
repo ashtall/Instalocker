@@ -1,3 +1,4 @@
+# -- [ DEPRECATED ] --
 # Instalocker
 Allows you to instalock in VALORANT
 
